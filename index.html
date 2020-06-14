@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="label">
+            <label>(R) Vermelho: </label>
+            <label>(G) Verde: </label>
+            <label>(B) Azul: </label>
+        </div>  
+        <div class="inputRange">
+            <input id="rgRed" type="range" min="0" max="255" onchange="modifyColors()">
+            <input id="rgGreen" type="range" min="0" max="255" onchange="modifyColors()">
+            <input id="rgBlue" type="range" min="0" max="255" onchange="modifyColors()">
+            <div id="sqRGB" class="square"></div>
+        </div>
+        <div class="inputNumber">
+            <input id="nbRed" type="number" disabled=true>
+            <input id="nbGreen" type="number" disabled=true>
+            <input id="nbBlue" type="number" disabled=true>
+        </div>
+    </div>
+    <script src="./scripts.js"></script>
+</body>
+</html>
